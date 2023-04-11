@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My table</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <h1>Vacation Planner</h1>
+  <body class="container">
+    <br />
+    <div class card="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-start-date">Hotel Check-in Date</label>
+              <input type="date" class="form-control" id="new-start-date" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-end-date">Hotel Check-out Date</label>
+              <input type="date" class="form-control" id="new-end-date" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-task">Destination</label>
+              <input
+                type="text"
+                class="form-control"
+                id="new-task"
+                placeholder="Enter Destination here"
+              />
+            </div>
+          </div>
+        </div>
+        <button id="add" class="btn btn-primary from-control">Submit</button>
+      </div>
+    </div>
+    <br />
+    <table id="list" class="table table-dark table-stripped">
+      <tr>
+        <th>Destination</th>
+        <th>Date Created</th>
+        <th>Check in Date</th>
+        <th>Check out Date</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
